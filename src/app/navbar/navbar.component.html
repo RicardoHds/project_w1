@@ -1,0 +1,15 @@
+<div class="pos-f-t">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="h4 text-white m-0"><a [routerLink]="['/']" class="text-white">Portfolio</a></div>
+      <button (click)="isCollapsed = !isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent"  [ngbCollapse]="!isCollapsed">
+        <div class="bg-dark p-4">
+          <h5 class="text-white h4"><a [routerLink]="['/photos']" class="text-white">Photos</a></h5>
+          <h5 class="text-white h4"><a [routerLink]="['/posts/monday']" class="text-white">Posts</a></h5>
+          <h5 class="text-white h4"><a [routerLink]="['/reviews']" class="text-white">Reviews</a></h5>
+        </div>
+      </div>
+  </div>

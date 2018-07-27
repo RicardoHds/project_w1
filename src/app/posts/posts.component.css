@@ -1,0 +1,8 @@
+.btn-outline-info:focus,
+.btn-outline-danger:focus{
+    box-shadow: none;
+}
+
+.btn{
+    width: 100%;
+}

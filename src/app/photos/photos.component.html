@@ -1,0 +1,29 @@
+<div class="container pt-5 pb-5">
+    <div class="row">
+        <div class="col">
+            <ngb-carousel>
+                <ng-template ngbSlide *ngFor="let slide of carousel">
+                    <img width="100%" [src]=slide.img alt="Random first slide">
+                    <div class="carousel-caption">
+                    <h3>{{ slide.title }}</h3>
+                    <p>{{ slide.description }}</p>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+    </div>
+    <div class="row pt-5">
+        <div class="col">
+            <div class="card-group">
+                <div class="card" *ngFor="let card of photos">
+                    <img class="card-img-top" [src]=card.img alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">{{ card.title }}</h5>
+                    <p class="card-text">{{ card.description }}</p>
+                    <p class="card-text"><small class="text-muted">Last updated {{ card.update }} mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
